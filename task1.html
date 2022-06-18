@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task 1</title>
+
+    
+    <style>
+        p{
+            font-family: Roboto, Arial;
+            margin-top: 0;
+            margin-bottom: 0;
+        }
+        .navigation{
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            padding: 10px 10px;
+            margin-top: 20px;
+            margin-bottom: 10px;
+        }
+        .heading{
+            font-size: 20px;
+            padding: 7px 15px; 
+            font-weight: 500;
+        }
+        
+        .search{
+            text-align: center;
+        }
+        #search{
+            width: 50%;
+            padding: 7px 15px;
+            font-size: 15px;
+            margin-top: 1px;
+            
+        }
+        .nav ul{
+            overflow: auto;
+            margin-top: 0;
+            margin-bottom: 0;
+            padding: 7px 15px; 
+        }
+        .nav li{
+            list-style: none;
+            float: right;
+        }
+        .nav a{
+            font-family: Roboto, Arial;
+            font-size: 18px;
+            text-decoration: none;
+            color: black;
+            margin-right: 15px;
+            
+        }
+        .horizontal-row{
+            border-color: rgb(247, 247, 247);
+            margin-block-end: 0;
+            margin-block-start: 0;
+        }
+        .main-heading{
+            font-family: Roboto, Arial;
+            text-align: center;
+            margin-top: 50px;
+            margin-bottom: 40px;
+        }
+        .span{
+            color: rgb(32, 95, 233);
+        }
+        .content{
+            width: 1000px;
+            text-align: center;
+            margin: auto;
+            color: rgb(96,96,96);
+            line-height: 23px;
+            font-size: 16px;
+            margin-bottom: 30px;
+        }
+        .button{
+            text-align: center;
+            margin-bottom: 50px;
+        }
+        .button1,
+        .button2{
+            padding: 14px 30px;
+            cursor: pointer;
+        }
+        .button1{
+            color: white;
+            background-color: rgb(32, 95, 233);
+            border: solid 1.5px rgb(32, 95, 233);
+            border-radius: 5px;
+        }
+        .button2{
+            color: rgb(32, 95, 233);
+            background-color: white;
+            border: solid 1.5px rgb(0,0,0,0.2);
+            border-radius: 5px;
+        }
+        .grid{
+            font-family: Roboto, Arial;
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+        }
+        .htmlhead{
+            font-weight: 700;
+        }
+        .grid{
+            margin-top: 30px;
+            margin-bottom: 50px;
+        }
+        th,td,table{
+            border: solid 1px rgb(0,0,0,0.3);
+            border-collapse: collapse;
+            padding: 10px 10px;
+            text-align: left;
+        }
+        .left{
+            margin-left: 80px;
+            margin-right: 60px;
+        }
+        .left p{
+            font-size: 18px;
+            line-height: 25px;
+        }
+        .center{
+            margin-left: 40px;
+        }
+        .right{
+            margin-right: 80px;
+        }
+        .frame{
+            width: 800px;
+            height: 600px;
+        }
+        .image{
+            border-radius: 5px;
+            width: 100%;
+            height: 240px;
+        }
+        .nav2{
+            width: 350px;
+            margin: auto;
+        }
+        .nav2 ul{
+            margin-top: 0;
+            margin-bottom: 0;
+            padding: 7px 15px; 
+        }
+        .nav2 li{
+            list-style: none;
+            float: left;
+        }
+        .nav2 a{
+            font-family: Roboto, Arial;
+            font-size: 18px;
+            margin-right: 15px;
+            
+        }
+        .none{
+            color: black;
+            
+        }
+    </style>
+</head>
+<body>
+    <div class="navigation">
+        <div class="heading">
+            <p>Alcheringa WebOps</p>
+        </div>
+        <div class="search">
+            <input id="search" type="text" placeholder="Search something here">
+        </div>
+        <div class="nav">
+            <ul>
+                <li><a href="#">Contact</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Home</a></li>
+            </ul>
+        </div>
+    </div>
+    <hr class="horizontal-row">
+    <div>
+        <h1 class="main-heading">Lorem Ipsum Dolor <span class="span">Lorem Ipsum</span></h1>
+        <p class="content">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aliquam veniam, sed vitae asperiores enim vel dolorum repudiandae dolor iste aspernatur illo sint, libero, debitis perferendis ipsa cum hic nemo quidem!</p>
+        <div class="button">
+            <button class="button1">
+                Button 1
+            </button>
+            <button class="button2">
+                Button 2
+            </button>
+        </div>
+    </div>
+    <div class="grid">
+            <div class="left">
+                <p class="htmlhead">HTML Formatting:</p>
+                <p><i>This is an italic text</i></p>
+                <p>This text is <mark>highlighted</mark></p>
+                <p>This is a <sub>subscript</sub> and a <sup>superscript</sup></p>
+                <p>"This is a quotation"</p>
+                <p><del>This is done using del tag</del></p>
+                <p class="htmlhead">HTML Table</p>
+                <table>
+                    <th class="table1">Company</th>
+                    <th>Contact</th>
+                    <th>Country</th>
+                    <tr>
+                    <td>
+                        AlfredsFutterkiste
+                    </td>
+                    <td>
+                        Maria Anders
+                    </td>
+                    <td>
+                        Germany
+                    </td>
+                </tr>
+                </table>
+            </div>
+            <div class="center">
+                <p><strong>HTML Iframes</strong></p>
+                <iframe src="https://www.youtube.com/embed/byhtsRBr2VY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
+            <div class="right">
+                <img class="image" src="task1.jpg" alt="Error">
+            </div>
+    </div>
+    <div class="nav2">
+        <ul>
+            <li><a href="https://www.facebook.com/alcheringaiitg/" target="_blank">Facebook</a></li>
+            <li class="none"><a>|</a></li>
+            <li> <a href="https://www.instagram.com/alcheringaiitg/?hl=en" target="_blank">Instagram</a></li>
+            <li class="none"><a>|</a></li>
+            <li> <a href="https://www.youtube.com/c/AlcheringaIITG" target="_blank">Youtube</a></li>
+        </ul>
+    </div>
+    </body>
+</html>
